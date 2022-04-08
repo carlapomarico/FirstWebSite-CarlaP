@@ -32,8 +32,8 @@
     margin-top: 10%;
     text-align: center;
     font-size: 2em;
-    background-color: #000;
-    color: #F0F0F0;
+    background-color: #FFF;
+    color: #000;
     font-family: monospace;
 }
 
@@ -121,26 +121,25 @@ footer {
     margin: 0 auto;
 }
 
-.entrada-blog a {
+.entrada-blog {
     display: inline-block;
-    background-color: #2196F3;
-    color: white;
+    background-color: white;
     padding: 10px 20px;
     text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+
+.entrada-blog a:hover {
+    background-color: black;
+    transition: 0.3s;
 }
 
 @media (min-width:480px) {
     .dos-columnas {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .entrada-blog {
-        flex-basis: calc(50%-1rem);
-        /*calc() hace un cálculo matemático*/
-        /*Ocupa el 50% del contenedor - 1 rem para dar espacio entre columnas*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
     }
 }
 
