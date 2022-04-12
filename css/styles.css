@@ -1,10 +1,11 @@
 
 .nav-main {
     display: inline-flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
     width: 100%;
+    font-size: 2em;
 }
 
 .button-nav-main {
@@ -28,10 +29,11 @@
     width: 90%;
     height: 30%;
     margin: auto;
+    margin-bottom: 5%;
     padding: 2%;
-    margin-top: 10%;
+    margin-top: 2%;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     background-color: #FFF;
     color: #000;
     font-family: monospace;
@@ -56,8 +58,9 @@ img {
 
 h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 10em;
     font-family: monospace;
+    font-weight: bolder;
 }
 
 
@@ -98,10 +101,6 @@ header {
     grid-area: left;
 }
 
-.contenido {
-    grid-area: contenido;
-}
-
 footer {
     grid-area: footer;
 }
@@ -128,6 +127,9 @@ footer {
     text-decoration: none;
     text-transform: capitalize;
     font-family: monospace;
+    color: #000;
+    font-size: 2.5em;
+    align-items: center;
 }
 
 .entrada-blog a:hover {
